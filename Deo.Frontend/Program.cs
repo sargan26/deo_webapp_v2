@@ -23,6 +23,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
     app.UseHsts();
+    int i = 12;
 }
 
 app.UseHttpsRedirection();
