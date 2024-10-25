@@ -12,6 +12,7 @@ app.MapGet("/", GetCounter);
 
 async Task<string> GetCounter(ILogger<Program> logger)
 {
+  int test1 = 12;
   logger.LogInformation("Retrieving counter value");
   var value = await Task.Run(counter.Get);
   return JsonSerializer.Serialize(new { value });
